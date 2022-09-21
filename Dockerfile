@@ -1,5 +1,6 @@
-FROM ubuntu:Latest
-MAINTAINER kbharathkumar654@gmail.com
-RUN sudo apt-get update
-RUN sudo apt-get -y install tomcat9
-RUN sudo apt-get -y install tomcat9-admin
+FROM ubuntu:latest
+MAINTAINER Rollback
+RUN apt-get update
+RUN apt-get -y install tomcat9
+RUN apt-get -y install tomcat9-admin
+EXPOSE 8080
