@@ -1,6 +1,4 @@
-FROM ubuntu:latest
+FROM tomcat:8.0-alpine
 MAINTAINER Rollback
-RUN apt-get update
-RUN apt-get -y install tomcat9
-RUN apt-get -y install tomcat9-admin
-EXPOSE 8080 
+EXPOSE 8080
+CMD ["catalina.sh","run"]
