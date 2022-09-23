@@ -3,4 +3,4 @@ MAINTAINER Rollback
 RUN apt-get update
 RUN apt-get -y install tomcat9
 RUN apt-get -y install tomcat9-admin
-EXPOSE 8080 .
+EXPOSE 8080 
